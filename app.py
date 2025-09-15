@@ -16,7 +16,7 @@ load_dotenv()
 # Set up the Streamlit app
 st.set_page_config(page_title='Text to Math Problem Solver', page_icon="🧮")
 st.title("Text to Math Problem Solver using Groq API")
-st.secrets["HF_Token"]
+st.secrets["HF_TOKEN"]
 
 # Input Groq API key via sidebar or from environment
 groq_api_key = st.sidebar.text_input("Enter Groq API Key", type="password") or os.getenv("GROQ_API_KEY")
@@ -103,4 +103,5 @@ if st.button("Find my answer"):
             st.chat_message("assistant").write(response)
     else:
         st.warning("Please enter a question.")
+
 
