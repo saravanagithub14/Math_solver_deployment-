@@ -3,3 +3,5 @@ langchain_community==0.3.29
 langchain_groq==0.3.8
 python-dotenv==1.1.1
 streamlit==1.49.1
+wikipedia
+
